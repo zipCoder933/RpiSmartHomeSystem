@@ -1,0 +1,123 @@
+<html>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--This server cant serve up images yet-->
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">-->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--<script src="https://canvas-gauges.com/download/latest/radial/gauge.min.js"></script>-->
+
+    <title>Smart Home Control Hub</title>
+    <style>
+        /*load style.css*/
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <body>
+        <nav style="background-color: #333;color: white;padding:10px;">
+            <i style="font-size:24px;margin-right: 10px;" class="fa">&#xf0e4;</i>
+            My Home
+            <span style="margin-left:20px;"></span>
+            <button onclick = "$('#settings').show();">Settings</button>
+            <span id="statusLine"><span id="status"><i class="fa fa-spinner fa-spin"></i></span></span>
+        </nav>
+        <br>
+
+        <div class="container">
+            <div class="col-md-12">
+                <h4>Tell me what you want to do</h4>
+                <input type="text" placeholder="Type command here and press enter" id="commandBox" />
+
+                <!--                <i class="fa fa-chevron-circle-down" onclick="$('#commandDropdown').toggle();" style="float: right;
+                                   font-size: 24px;
+                                   position: relative;
+                                   top: -65px;
+                                   right: 10px;
+                                   padding: 10px;"></i>-->
+                <!--Create a dropdown to select train vs command-->
+
+            </div>
+            <div id="infoBar" style="background-color: white;
+                 padding: 10px;border-radius: 5px;
+                 transition: background-color 1s;
+                 margin-top: 10px;"></div>
+            <br><br>
+        </div>
+
+
+        <div class="container">
+            <span id="componentFiller">
+                <!--insert components-->
+            </span>
+            <div class="component col-md-5 add" onclick="showNewComponentMenu();"><i class="fa">&#xf067;</i> Add Component
+            </div>
+
+        </div>
+        <div id="newComp" style="display: none;">
+            <!--load newComponent.html-->
+        </div>
+
+        <div class="popupWindow" id="settings" style="display: none;"> 
+            <div>
+                <header>
+                    Settings <i class="fa" onclick="$('#settings').hide();">&#xf00d;</i>
+                </header>
+                <br>
+                <h5>Smart Assistant</h5>
+                <table>
+                    <tr>
+                        <td>Mode:</td>
+                        <td><select id="commandType" style="margin-right:10px;">
+                                <option value="command">Command</option>
+                                <option value="train">Train</option>
+                            </select></td>
+
+                    </tr>
+                    <tr>
+                        <td>Erase Training:</td> 
+                        <td><button onclick="eraseTraining()" style="margin-top: 10px;">Erase training</button></td>
+                    </tr>
+                </table>
+                <h5>Advanced</h5>
+                <table>
+                    <tr>
+                        <td>Reset Configuration: </td>
+                        <td><button onclick="resetConfig();">Reset</button></td>
+                    </tr>
+                    <tr>
+                        <td>Update frequency (ms): </td>
+                        <td>
+                            <!--insert dgUpdateFreq-->
+                        </td>
+                    </tr>
+                </table>
+                <div class="splitter" id="componentType" style="font-weight: 600;text-align: center;">
+                    <button onclick="$('#settings').hide();" >Save</button><!--TODO: Have instructions for training and ask the user to add some examples for auto commands.-->
+                </div>
+            </div>  </div>
+
+        <br><br>
+    </body>
+    <script>
+        /*load script.js*/
+    </script>
+</html>

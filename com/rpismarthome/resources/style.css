@@ -1,0 +1,372 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.component {
+    margin: 10px 10px 0px 0px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #9d9c9c;
+    padding: 4px;
+    font-size: 0.95em;
+    vertical-align: top;
+}
+.propStr{
+    padding: 5px;
+
+}
+nav button{
+    background-color: #383838;
+    margin: -2px 0;
+
+}
+
+nav button:hover{
+    background-color: #444;
+
+}
+
+nav button:active{
+    background-color: #434343;
+
+}
+
+.component h3 {
+    border-radius: 5px;
+    background-color: #5800ff;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.component table {
+    font-size: 0.98em;
+    margin-bottom: 20px;
+    min-width: 200px;
+    width: 100%;
+}
+
+td {
+    padding: 7px;
+    user-select: none;
+}
+
+input[type=number] {
+    border-radius: 4px;
+    border: 1px solid #bababa;
+    padding: 4px;
+    font-size: 18px;
+    max-width: 80px;
+    color: #363636;
+}
+
+input[type=text] {
+    border-radius: 4px;
+    border: 1px solid #bababa;
+    padding: 4px;
+    font-size: 18px;
+    /*max-width: 80px;*/
+    color: #363636;
+    max-width: 88%;
+}
+
+#commandBox{
+    font-size:0.95em;
+    width: 100%;
+    max-width: initial;
+    /*border:none;*/
+    padding: 12px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+
+}
+
+.readonlyNumber{
+    border-radius: 4px;
+    border: 1px solid #bababa;
+    padding: 4px;
+    font-size: 18px;
+    min-width: 80px;
+    color: #363636;
+    display: inline-block;
+    user-select: none;
+    max-width: 100px;
+    overflow: hidden;
+}
+.readonlyString{
+    border-radius: 4px;
+    border: 1px solid #bababa;
+    padding: 4px;
+    font-size: 16px;
+    min-width: 80px;
+    color: #363636;
+    display: inline-block;
+    user-select: none;
+    max-width: 150px;
+    overflow: hidden;
+
+}
+
+.readonlyBoolean{
+    border-radius: 4px;
+    border: 1px solid #bababa;
+    padding: 4px;
+    font-size: 18px;
+    min-width: 80px;
+    color: #363636;
+    display: inline-block;
+    user-select: none;
+    max-width: 100px;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 0.95em;
+
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 4px 24px;
+    background-color: rgb(42, 116, 253);
+    color: white;
+    font-weight: 400;
+}
+
+select{
+    padding: 4px 6px;
+}
+
+button:hover {
+    background-color: rgb(23, 104, 255);
+    color: white;
+    font-weight: 400;
+}
+
+button:active {
+    background-color: rgb(0, 89, 255);
+    color: white;
+    font-weight: 400;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+td {
+    color: #333;
+
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+input:checked+.slider {
+    background-color: #2fc17f;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+img {
+    display: block;
+}
+
+h3 input {
+    border: none;
+    font: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    color: inherit;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.delete {
+    font-size: 18px;
+    float: right;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    right: 14px;
+}
+
+.delete:hover {
+    color: #cd1313;
+}
+
+.add {
+    text-align: center;
+    color: #9390d3;
+    padding: 50px 0;
+    background: #e7eaff;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    user-select: none;
+}
+
+.add:hover {
+    color: #918dcb;
+    background: #d6d9ef;
+}
+
+.popupWindow{
+    text-align: center;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    padding:5px;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popupWindow div{
+    max-width: 500px;
+    margin: 5px auto;
+    padding: 10px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.popupWindow header{
+    background-color: #e0e0e0;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+.popupWindow header .fa{
+    float: right;
+    position: relative;
+    top: 2.5px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.splitter{
+    width: 100%;
+    border-top: 1px solid #cbcbcb;
+    border-radius: 0px!important;
+}
+
+#statusLine{
+float: right;
+color: #5f5f5f;
+    font-size: 1em;
+    margin-top: 6px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50vw;
+}
+
+button:disabled{
+    opacity:0.5;
+}
+
+.type{
+    font-size: 0.9em;
+    color: #a9a9a9;
+    margin-top: -12px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    background-color: #f8f8f8;
+}
+
