@@ -1,10 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.rpismarthome.utils;
 
-import com.rpismarthome.server.MainSocketServer;
+import com.rpismarthome.MainSocketServer;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;
@@ -18,7 +14,7 @@ public class SpeechToText {
 
     public SpeechToText() throws FileNotFoundException, InterruptedException {
         try {
-            CommandUtils.execCommandAsync(true,"python3 /home/pi/Documents/smartHome/stt.py");
+            CommandUtils.execCommandAsync(true,"python3 "+FileUtils.getResourcePath()+"stt.py");
             Thread.sleep(5000);
             File file = FileUtils.file("stt_out.txt");
             RandomAccessFile in = new RandomAccessFile(file, "r");

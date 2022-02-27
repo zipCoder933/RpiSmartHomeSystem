@@ -4,8 +4,8 @@
  */
 package com.rpismarthome;
 
-import com.rpismarthome.configuration2.component.Component;
-import com.rpismarthome.configuration2.component.Value;
+import com.rpismarthome.configuration.component.Component;
+import com.rpismarthome.configuration.component.Value;
 import com.rpismarthome.utils.MathUtils;
 import java.util.ArrayList;
 import processing.core.*;

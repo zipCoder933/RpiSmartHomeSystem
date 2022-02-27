@@ -44,20 +44,6 @@ function wsWrite(str){
     console.log("OUT: "+str);
     webSocket.send(str);
 }
-
-//function wsWrite(prefix, array) {
-//    //Join array together with the delimiter "|"
-//    var str = array.join("|");
-//    //Split string every 100 characters
-//    var strArray = str.match(/.{1,100}/g);
-//    //Send each string in strArray individually
-//    for (var i = 0; i < strArray.length; i++) {
-//        wsWrite(prefix + "|" + strArray[i]);
-//    }
-//    wsWrite(prefix + "|DONE");
-//}
-
-
 webSocket.onclose = function (message) {
     print("<i class='fa fa-chain-broken'></i>");
     alert("You have been Disconnected. Reload to try again.")

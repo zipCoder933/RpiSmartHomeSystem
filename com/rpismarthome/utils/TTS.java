@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.rpismarthome.utils;
 
 import com.rpismarthome.Main;
@@ -17,7 +13,7 @@ public class TTS {
         text = text.replace("\n", "").replace("\"", "");
         System.out.println("Speaking: \"" + text + "\"");
         if (!Main.isRunningFromLocal()) {
-            CommandUtils.execCommand(true, "/home/pi/Documents/smartHome/speech.sh \"" + text + "\"");
+            CommandUtils.execCommand(true, FileUtils.getResourcePath()+"speech.sh \"" + text + "\"");
         }
     }
 }

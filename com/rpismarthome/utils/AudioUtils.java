@@ -17,6 +17,6 @@ public class AudioUtils {
 
     public static void setVolume(int vol) throws IOException {
         vol = MathUtils.clamp(vol, 0, 100);
-        CommandUtils.execCommand(true,"sudo /home/pi/Documents/smartHome/volume.sh " + vol);
+        CommandUtils.execCommand(true,"sudo "+FileUtils.getResourcePath()+"volume.sh " + vol);
     }
 }

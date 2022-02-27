@@ -4,9 +4,8 @@
  */
 package com.rpismarthome;
 
-import com.rpismarthome.configuration2.Configuration;
-import com.rpismarthome.configuration2.component.Component;
-import com.rpismarthome.server.MainSocketServer;
+import com.rpismarthome.configuration.Configuration;
+import com.rpismarthome.configuration.component.Component;
 import com.rpismarthome.utils.FileUtils;
 import com.rpismarthome.utils.SpeechToText;
 import com.rpismarthome.utils.backend.FrontendParsingUtils;
@@ -26,6 +25,13 @@ import java.util.logging.Logger;
  * @author zipCoder933
  */
 public class Main {
+
+    //==YOU NEED TO EDIT THESE LINES ===================
+    public static String ipAdress = "192.168.0.40";
+    private static boolean usingScreen = true;
+    public static String RESOURCE_PATH = "/home/pi/Documents/smartHome/resources/";
+    public static String LOCAL_RESOURCE_PATH = "C:\\Local Files\\Java\\Projects\\RPISmartHomeAnt\\src\\com\\rpismarthome\\resources\\";
+    //==================================================
 
     /**
      * @return the frame
@@ -59,11 +65,7 @@ public class Main {
 
     public static MainSocketServer websocket;
     private static Configuration config;
-
-    public static String ipAdress = "192.168.0.40";
-
     private static UIFrame frame;
-    private static boolean usingScreen = true;
     static SpeechToText stt;
 
     public static void main(String[] args) throws Exception {
@@ -72,8 +74,9 @@ public class Main {
 
         if (isRunningFromLocal()) {
             ipAdress = "localhost";
+            RESOURCE_PATH = LOCAL_RESOURCE_PATH;
         }
-        FileUtils.init();
+
         config = new Configuration(false);
         InetSocketAddress addr = new InetSocketAddress(ipAdress, 8500);
         HttpServer server = HttpServer.create(addr, 0);
@@ -85,7 +88,7 @@ public class Main {
         websocket = new MainSocketServer();
         GPIOUtils.start();
         if (isUsingScreen()) {
-            frame = new UIFrame(); //Uncomment this line if you are using a touchscreen
+            frame = new UIFrame();
         }
         for (Component comp : config.getComponents()) {
             if (comp.getType().equals("usb-microphone")) {

@@ -4,6 +4,7 @@
  */
 package com.rpismarthome;
 import com.rpismarthome.utils.SpeechToText;
+import com.weather.weather.OpenWeatherAPIClient;
 import java.io.IOException;
 
 /**
@@ -13,6 +14,7 @@ import java.io.IOException;
 public class Test {
 
     public static void main(String args[]) throws IOException, NoSuchMethodException, InterruptedException {
-        new SpeechToText();
+        OpenWeatherAPIClient weather = new OpenWeatherAPIClient();
+        weather.findMyAPIKey();
     }
 }

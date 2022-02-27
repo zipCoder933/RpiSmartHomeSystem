@@ -1,121 +1,111 @@
-#Time Sensor: 6:21 PM
-#Weather API Sensor: Min Temperature (C)= 265.56, Wind Speed (m/s)= 1.34, Temperature (C)= 268.69, Pressure (hPa)= 1034.0, Wind Gust (m/s)= 4.02, Feels Like (C)= 266.62, Max Temperature (C)= 270.39, Humidity (%)= 71.0, Wind Direction= 283.0, 
-#COMMAND: Turn the kitchen lights on
-rgb_light.Red(255.0)
-rgb_light.Blue(255.0)
-rgb_light.Green(255.0)
-light.Value(0)
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
+#Time: 6:05 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: Hello! What can you do?
 verbose_output.Volume(40)
-verbose_output.Speech(Will do! ...)
+verbose_output.Speech(Anything you want! I have access to the lights, can tell you the time or local weather.)
+kitchen_lights.Value(0)
+bedroom_lamp.Red(0)
+bedroom_lamp.Blue(0)
+bedroom_lamp.Green(0)
 ####
 
-
 ####
-#Time Sensor: 6:21 PM
-#Weather API Sensor: Min Temperature (C)= 265.56, Wind Speed (m/s)= 1.34, Temperature (C)= 268.69, Pressure (hPa)= 1034.0, Wind Gust (m/s)= 4.02, Feels Like (C)= 266.62, Max Temperature (C)= 270.39, Humidity (%)= 71.0, Wind Direction= 283.0, 
-#COMMAND: Turn the bedroom lights on.
-rgb_light.Red(255.0)
-rgb_light.Blue(255.0)
-rgb_light.Green(255.0)
-light.Value(255.0)
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
+#Time: 6:06 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: Ok. Turn on the kitchen lights.
 verbose_output.Volume(40)
-verbose_output.Speech(Okey dokey.)
+verbose_output.Speech(Will do...)
+kitchen_lights.Value(255.0)
+bedroom_lamp.Red(0)
+bedroom_lamp.Blue(0)
+bedroom_lamp.Green(0)
 ####
 
+####
+#Time: 6:06 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: Turn on the bedroom lights
+verbose_output.Volume(40)
+verbose_output.Speech(Ok.)
+kitchen_lights.Value(255.0)
+bedroom_lamp.Red(255.0)
+bedroom_lamp.Blue(255.0)
+bedroom_lamp.Green(255.0)
+####
 
 ####
-#Time Sensor: 6:21 PM
-#Weather API Sensor: Min Temperature (C)= 265.56, Wind Speed (m/s)= 1.34, Temperature (C)= 268.69, Pressure (hPa)= 1034.0, Wind Gust (m/s)= 4.02, Feels Like (C)= 266.62, Max Temperature (C)= 270.39, Humidity (%)= 71.0, Wind Direction= 283.0, 
+#Time: 6:06 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: Now turn all the lights off.
+verbose_output.Volume(40)
+verbose_output.Speech(Alrighty...)
+kitchen_lights.Value(0.0)
+bedroom_lamp.Red(0.0)
+bedroom_lamp.Blue(0.0)
+bedroom_lamp.Green(0.0)
+####
+
+####
+#Time: 6:06 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: What is the time?
+verbose_output.Volume(40)
+verbose_output.Speech(Its 6:06 PM)
+kitchen_lights.Value(0.0)
+bedroom_lamp.Red(0.0)
+bedroom_lamp.Blue(0.0)
+bedroom_lamp.Green(0.0)
+####
+
+####
+#Time: 6:07 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: What is the temperature outside?
+verbose_output.Volume(40)
+verbose_output.Speech(270.26 degrees Celcius)
+kitchen_lights.Value(0.0)
+bedroom_lamp.Red(0.0)
+bedroom_lamp.Blue(0.0)
+bedroom_lamp.Green(0.0)
+####
+
+####
+#Time: 6:09 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: hi
+verbose_output.Volume(40)
+verbose_output.Speech(Hello! What can you do?)
+kitchen_lights.Value(0.0)
+bedroom_lamp.Red(0.0)
+bedroom_lamp.Blue(0.0)
+bedroom_lamp.Green(0.0)
+#Time: 6:10 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (
+####
+
+####
+#Time: 6:10 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: I like you!
+verbose_output.Volume(40)
+verbose_output.Speech(Thanks!)
+####
+
+####
+#Time: 6:10 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
 #COMMAND: What is your favorite color?
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
-light.Value(0)
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
 verbose_output.Volume(40)
-verbose_output.Speech(Blue is my favorite color.)
+verbose_output.Speech(My favorite color is blue. Tell me the color that you want to turn on the bedroom lights to. I can turn on the bedroom lights to pink, red, yellow, green, blue, and white.)
 ####
 
 ####
-#Time Sensor: 6:21 PM
-#Weather API Sensor: Min Temperature (C)= 265.56, Wind Speed (m/s)= 1.34, Temperature (C)= 268.69, Pressure (hPa)= 1034.0, Wind Gust (m/s)= 4.02, Feels Like (C)= 266.62, Max Temperature (C)= 270.39, Humidity (%)= 71.0, Wind Direction= 283.0, 
-#COMMAND: Why?
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
-light.Value(0)
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
+#Time: 6:10 PM
+#Local Weather: Min Temperature (C)= 270.26, Wind Speed (m/s)= 5.04, Temperature (C)= 270.26, Pressure (hPa)= 1028.0, Wind Gust (m/s)= 12.67, Feels Like (C)= 264.59, Max Temperature (C)= 270.26, Humidity (%)= 79.0, Wind Direction= 226.0, 
+#COMMAND: Turn the bedroom lights to green
 verbose_output.Volume(40)
-verbose_output.Speech(I dont know. blue is my favorite color)
-####
-
-####
-#Time Sensor: 6:21 PM
-#Weather API Sensor: Min Temperature (C)= 265.56, Wind Speed (m/s)= 1.34, Temperature (C)= 268.69, Pressure (hPa)= 1034.0, Wind Gust (m/s)= 4.02, Feels Like (C)= 266.62, Max Temperature (C)= 270.39, Humidity (%)= 71.0, Wind Direction= 283.0, 
-#COMMAND: Turn the kitchen lights to blue
-rgb_light.Red(0)
-rgb_light.Blue(255.0)
-rgb_light.Green(0)
-light.Value(0)
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
-verbose_output.Volume(40)
-verbose_output.Speech(Okey dokey.)
-####
-
-####
-#Time Sensor: 6:22 PM
-#Weather API Sensor: Min Temperature (C)= 265.4, Wind Speed (m/s)= 0.89, Temperature (C)= 268.48, Pressure (hPa)= 1034.0, Wind Gust (m/s)= 1.34, Feels Like (C)= 268.48, Max Temperature (C)= 269.92, Humidity (%)= 71.0, Wind Direction= 303.0, 
-#COMMAND: Thats not how you do it.
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
-light.Value(0)
-rgb_light.Red(0)
-rgb_light.Blue(0)
-rgb_light.Green(0)
-verbose_output.Volume(40)
-verbose_output.Speech(I didnt understand. Please repeat that command. I dont know how to do that.)
-####
-
-####
-#Time Sensor: 6:22 PM
-#Weather API Sensor: Min Temperature (C)= 265.4, Wind Speed (m/s)= 0.89, Temperature (C)= 268.48, Pressure (hPa)= 1034.0, Wind Gust (m/s)= 1.34, Feels Like (C)= 268.48, Max Temperature (C)= 269.92, Humidity (%)= 71.0, Wind Direction= 303.0, 
-#COMMAND: Turn the kitchen lights to blue.
-rgb_light.Red(0.0)
-rgb_light.Blue(255.0)
-rgb_light.Green(0.0)
-light.Value(0.0)
-rgb_light.Red(0.0)
-rgb_light.Blue(0.0)
-rgb_light.Green(0.0)
-verbose_output.Volume(40.0)
-verbose_output.Speech(I didnt understand. Please repeat that command. I dont know how to do that.)
-####
-
-
-####
-#Time Sensor: 6:22 PM
-#Weather API Sensor: Min Temperature (C)= 265.4, Wind Speed (m/s)= 0.89, Temperature (C)= 268.48, Pressure (hPa)= 1034.0, Wind Gust (m/s)= 1.34, Feels Like (C)= 268.48, Max Temperature (C)= 269.92, Humidity (%)= 71.0, Wind Direction= 303.0, 
-#COMMAND: Turn the kitchen lights to green
-rgb_light.Red(0.0)
-rgb_light.Blue(0.0)
-rgb_light.Green(255.0)
-light.Value(0.0)
-rgb_light.Red(0.0)
-rgb_light.Blue(0.0)
-rgb_light.Green(0.0)
-verbose_output.Volume(40.0)
-verbose_output.Speech(I didnt understand. Please repeat that command. I dont know how to do that.)
+verbose_output.Speech(Ok.)
+bedroom_lamp.Red(0.0)
+bedroom_lamp.Blue(0.0)
+bedroom_lamp.Green(255.0)
 ####
